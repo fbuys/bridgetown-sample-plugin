@@ -11,6 +11,9 @@ Bridgetown.initializer :sample_plugin do |config|
 
   # Add default configuration data:
   config.sample_plugin ||= {}
+  pp config.to_h
+  print "sample_plugin config: " 
+  pp config.sample_plugin
   config.sample_plugin.my_setting ||= 123
 
   # Register your builder:
